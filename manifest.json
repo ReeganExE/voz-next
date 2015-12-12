@@ -1,0 +1,22 @@
+﻿{
+    "manifest_version": 2,
+    "name": "Vozforums Next Page",
+    "version": "0.1",
+    "description": "Vozforums Next Page Widget by Ninh #ReeganExE",
+    "author": "Ninh Pham - #ReeganExE",
+    "homepage_url": "http://lucdao.com",
+
+    "content_scripts": [{
+        "js": ["jquery.min.js", "jquery-ui.min.js", "script.js"],
+        "css": ["style.css"],
+        "matches": ["https://vozforums.com/showthread.php*", "https://vozforums.com/forumdisplay.php*"],
+        "run_at": "document_end"
+    }],
+
+    "permissions": ["https://vozforums.com/*"],
+
+    "icons": {
+        "48": "voz-next.png",
+        "128": "voz-next.png"
+    }
+}
