@@ -28,6 +28,11 @@
         pos && $box.css(pos);
     }
 
+    $('a[href^="/redirect/index.php"]').each(function() {
+        var href = this.href;
+        this.href = decodeURIComponent(href.substr(href.indexOf('link=') + 5));
+    })
+
     function getPos() {
         var pos = localStorage.getItem('pos');
         if (pos) {

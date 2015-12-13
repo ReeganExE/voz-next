@@ -7,8 +7,8 @@
     "homepage_url": "http://lucdao.com",
 
     "content_scripts": [{
-        "js": ["jquery.min.js", "jquery-ui.min.js", "script.js"],
-        "css": ["style.css"],
+        "js": ["js/jquery.min.js", "js/jquery-ui.min.js", "js/script.js"],
+        "css": ["css/style.css"],
         "matches": ["https://vozforums.com/showthread.php*", "https://vozforums.com/forumdisplay.php*"],
         "run_at": "document_end"
     }],
