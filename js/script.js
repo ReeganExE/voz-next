@@ -1,13 +1,13 @@
 (function($) {
-    var html = ['<div id="voz-next-box">',
-            '  <a href="#" id="z-pre-page" z-rel="prev">Pre</a>',
-            '  <a href="#" id="z-next-page" z-rel="next">Next</a>',
+    var html = ['<div id="voz-next-box" title="Voz Next Page Widget (#ReeganExE)">',
+            '  <a href="#" id="z-pre-page" z-rel="prev"><img id="voz-pre" src="https://cdn3.iconfinder.com/data/icons/basic-flat-svg/512/svg10-512.png" /></a>',
+            '  <a href="#" id="z-next-page" z-rel="next"><img src="https://cdn3.iconfinder.com/data/icons/basic-flat-svg/512/svg10-512.png" /></a>',
             '</div>'
         ].join('\n'),
         $window = $(window),
         $box;
 
-    if (document.querySelector('[rel="next"]')) {
+    if (document.querySelector('[rel="next"],[rel="prev"]')) {
         $box = $(html).appendTo(document.body).on('click', 'a',
             function(e, a) {
                 e.preventDefault();
